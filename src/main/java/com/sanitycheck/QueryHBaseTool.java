@@ -21,7 +21,7 @@ public class QueryHBaseTool implements BasicQueryTool {
 	public QueryHBaseTool(Map<String,String> map) {
 		this.map = map;
 	}
-
+ 
 	static {
 		conf = HBaseConfiguration.create();
 		conf.set(ConfigHelper.HBase_Zookeeper_QUORUM, ConfigHelper.HBase_Zookeeper_QUORUM_HOST);

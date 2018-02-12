@@ -1,9 +1,7 @@
 package com.helper;
 import java.util.ResourceBundle;
 
-
 public class ConfigHelper {
-
 	/**
 	 * Flume
 	 */

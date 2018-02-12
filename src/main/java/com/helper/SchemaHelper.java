@@ -1,8 +1,6 @@
 package com.helper;
-
 import org.apache.avro.Schema;
 import org.apache.avro.Schema.Parser;
-
 import net.sf.json.JSONObject;
 
 public class SchemaHelper {

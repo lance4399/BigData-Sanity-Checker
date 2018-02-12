@@ -22,12 +22,10 @@ import net.sf.json.JSONObject;
 
 public class QueryKafkaTool implements BasicQueryTool {
 	private static final Logger logger = Logger.getLogger(QueryKafkaTool.class);
-//	private Set<String> uuids;
 	private Map<String, String> map;
-//	private Map<String, JSONObject> maps;
 	public QueryKafkaTool(Map<String, String> map) {
 		this.map = map;
-	}
+	} 
 	
 	@Override
 	public Set<String> execute() throws Exception {

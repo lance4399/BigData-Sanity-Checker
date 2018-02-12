@@ -12,7 +12,7 @@ public class CacheHelper<K,V> extends LinkedHashMap<K,V>{
 
 	@Override
 	public boolean removeEldestEntry(Map.Entry<K, V> eldest) {
-		long removeThreshold = 2 * 24 * 60 * 60 * 1000;//2 days
+		long removeThreshold = 2 * 24 * 60 * 60 * 1000;//2days
 		try {
 			String source = (String) eldest.getValue();	
 			JSONObject message =JSONObject.fromObject(source);

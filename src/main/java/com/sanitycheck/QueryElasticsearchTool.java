@@ -16,7 +16,7 @@ public class QueryElasticsearchTool implements BasicQueryTool {
 	public QueryElasticsearchTool(Map<String, String> map) {
 		this.map = map;
 	}
-
+ 
 	 public static void main(String[] args) throws Exception {
 	 String uuid = "759d8bd3bad3402baa963b46442edb54";
 	 Map<String, String> uus =new HashMap<String, String>();

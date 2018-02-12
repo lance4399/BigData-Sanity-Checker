@@ -14,11 +14,7 @@ public class MessageHelper {
 	private static Logger logger = Logger.getLogger(MessageHelper.class);
 	private int count = 1;
 	private Set<String> msgList;
-	// public static void main(String[] args) throws Exception {
-	//     new MessageHelper().sendMessage();
-	// }
 	
-	// rtc_sanity_check|uuid|record_time|event_time|ip
 	public Set<String> sendMessage() throws Exception {
 		Socket s = null;
 		PrintWriter pw = null;
@@ -28,11 +24,9 @@ public class MessageHelper {
 		String[] flumeList =null;
 		if(flumeHost.contains(",")){
 			flumeList= ConfigHelper.Flume_HOST.split(",");
-//			System.out.println("the msg list are: ");
 			for(String i: flumeList){
 				System.out.print(i+"	");
 			}
-			System.out.println("########################");
 			for(int i=0;i<flumeList.length;i++){
 				try {
 					String uuid = UUID.randomUUID().toString().replace("-", "");

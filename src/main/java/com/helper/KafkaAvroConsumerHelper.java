@@ -29,12 +29,6 @@ public class KafkaAvroConsumerHelper{
 	public static Map<String, String> map = new CacheHelper<String, String>();
 	public static Map<String, SpecificDatumReader<GenericRecord>> datumMap = new HashMap<String, SpecificDatumReader<GenericRecord>>();
 	
-	// public static void main(String[] args) throws Exception {
-	// String uuid = "759d8bd3bad3402baa963b46442edb54";
-	// new KafkaAvroConsumerTool(uuid).execute();
-	// }
-	
-	
 	public static void start() throws Exception{
 		Properties props = new Properties();
 		props.put(CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, ConfigHelper.Kafka_HOST + ":" + ConfigHelper.Kafka_PORT);

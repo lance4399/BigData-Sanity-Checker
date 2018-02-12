@@ -12,7 +12,7 @@ import com.helper.MessageHelper;
  */
 public class MonitorTool {
 	private static final Logger logger = Logger.getLogger(MonitorTool.class);
-
+ 
 	public static void main(String[] args) throws Exception {
 
 		 new MonitorTool().startMonitor();

@@ -16,7 +16,7 @@ public class QueryCassandraTool implements BasicQueryTool {
 	public QueryCassandraTool(Map<String,String> map) {
 		this.map = map;
 	}
-
+ 
 	@Override
 	public Set<String> execute() throws Exception {
 //		CopyOnWriteArraySet<String > set = new 

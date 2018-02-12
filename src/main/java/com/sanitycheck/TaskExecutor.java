@@ -27,11 +27,6 @@ public class TaskExecutor {
 		TaskExecutor.msgs = msgs;
 	}
 
-//	 public static void main(String[] args) throws Exception {
-//	 uuid = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss SSS").format(new Date());
-//	 new TaskExecutor(uuid).executeTasks();
-//	 }
-
 	public void executeTasks() throws Exception {
 		long startTime = System.currentTimeMillis();
 		Map<String,String> map = new HashMap<String,String>();
@@ -39,7 +34,6 @@ public class TaskExecutor {
 			map.put(msg.split("-")[0], msg);
 		}
 //		System.out.println("the map keySet() is : "+ map.keySet());
-//		System.out.println("the size of keySet is: "+map.keySet().size());
 		
 		QueryKafkaTool  kafkaTool=new QueryKafkaTool(map);
 		QueryCassandraTool  cassandraTool=new QueryCassandraTool(map);
